@@ -1,5 +1,6 @@
 package io.qameta.allure;
 
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -7,16 +8,14 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 
-/**
- * @author eroshenkoam (Artem Eroshenko).
- */
+
 @Layer("web")
-@Owner("eroshenkoam")
+@Owner("YanaTsiFi")
 @Feature("Pull Requests")
 public class PullRequestsWebTest {
 
-    private static final String OWNER = "allure-framework";
-    private static final String REPO = "allure2";
+    private static final String OWNER = "YanaTsiFi";
+    private static final String REPO = "allure-example";
 
     private static final String BRANCH = "new-feature";
 

@@ -1,6 +1,5 @@
 package io.qameta.allure;
 
-import io.qameta.allure.Step;
 
 import static io.qameta.allure.Allure.step;
 

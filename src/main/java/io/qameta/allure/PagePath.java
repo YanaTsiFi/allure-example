@@ -1,7 +1,5 @@
 package io.qameta.allure;
 
-import io.qameta.allure.LabelAnnotation;
-
 import java.lang.annotation.*;
 
 @Documented
