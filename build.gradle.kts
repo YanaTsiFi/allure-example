@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "io.eroshenkoam"
-version = "1.0"  // Добавим конкретную версию
+version = "1.0"
 
 allure {
     report {
@@ -21,7 +21,6 @@ allure {
     }
 }
 
-// Исправление для Java 17
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
@@ -37,12 +36,10 @@ tasks.withType<Test> {
     useJUnitPlatform {
     }
 
-    // Параметры для параллельного запуска
     systemProperty("junit.jupiter.execution.parallel.enabled", "true")
     systemProperty("junit.jupiter.execution.parallel.config.strategy", "dynamic")
     systemProperty("junit.jupiter.extensions.autodetection.enabled", "true")
 
-    // Настройки для работы с Java 17
     jvmArgs = listOf(
         "--add-opens=java.base/java.lang=ALL-UNNAMED",
         "--add-opens=java.base/java.util=ALL-UNNAMED"
